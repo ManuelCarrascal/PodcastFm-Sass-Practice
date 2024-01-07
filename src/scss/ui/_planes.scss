@@ -17,24 +17,23 @@
     flex-direction: column;
     @include m.desktop {
       flex-direction: row;
-      max-width: 80rem;
-      margin-inline: auto;
       margin-block-start: 10rem;
+      margin-inline: auto;
+      max-width: 80rem;
     }
   }
 }
 
 .plan {
-  flex-grow: 1;
   background-color: v.$blanco;
-  padding: 16rem 4rem 8rem;
   border-bottom: 0.1rem solid #e1e1e1;
+  flex-grow: 1;
+  padding: 16rem 4rem 8rem;
   transition: transform 0.3s ease;
 
   @include m.desktop {
-    padding: 16rem 4rem;
-
     border: none;
+    padding: 16rem 4rem;
     &:hover {
       transform: scale(1.1);
     }
@@ -49,10 +48,10 @@
     background-color: v.$primario;
     order: -1;
     @include m.desktop {
-      order: unset;
-      margin: -5rem 0;
-      border-radius: 2rem;
       background-position: 50% 7rem;
+      border-radius: 2rem;
+      margin: -5rem 0;
+      order: unset;
       padding-top: calc(16rem + 5rem);
       z-index: 1;
     }
@@ -64,15 +63,15 @@
 
   &__precio {
     font-size: 1.8rem;
-    text-align: center;
     font-weight: 700;
+    text-align: center;
     text-transform: uppercase;
   }
 
   &__listado {
     &-item {
-      text-align: center;
       margin-bottom: 2rem;
+      text-align: center;
 
       &:last-of-type {
         margin-bottom: 0;
